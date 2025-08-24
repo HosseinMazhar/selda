@@ -1,4 +1,93 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+  font-family: "Kalame";
+  src: url("/fonts/kalame/Kalameh-Light.d0b378a.eot"),
+    url("/fonts/kalame/Kalameh-Light.6e146d5.woff") format("woff"),
+    url("/fonts/kalame/Kalameh-Light.b773d9e.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Kalame";
+  src: url("/fonts/kalame/Kalameh-Regular.25a8bec.eot"),
+    url("/fonts/kalame/Kalameh-Regular.42b8a54.woff") format("woff"),
+    url("/fonts/kalame/Kalameh-Regular.a038ae9.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Kalame";
+  src: url("/fonts/kalame/Kalameh-Medium.e201a39.eot"),
+    url("/fonts/kalame/Kalameh-Medium.b309fcf.woff") format("woff"),
+    url("/fonts/kalame/Kalameh-Medium.bc89e61.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Kalame";
+  src: url("/fonts/kalame/Kalameh-Bold.7dedd20.eot"),
+    url("/fonts/kalame/Kalameh-Bold.337ad92.woff") format("woff"),
+    url("/fonts/kalame/Kalameh-Bold.cc91ac9.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "KalameNum";
+  src: url("/fonts/kalame/KalamehWebFaNum-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "KalameNum";
+  src: url("/fonts/kalame/KalamehWebFaNum-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "KalameNum";
+  src: url("/fonts/kalame/KalamehWebFaNum-Thin.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/Inter/Inter-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/Inter/Inter-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/Inter/Inter-Bold.woff") format("woff");
+}
+
+  .font-kalameh {
+    font-family: "Kalame", sans-serif;
+  }
+  .font-kalamehNum {
+    font-family: "KalameNum", sans-serif;
+  }
+  .font-inter {
+    font-family: "Inter", sans-serif;
+  }
 
 :root {
   --background: #ffffff;
@@ -10,6 +99,8 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-kalameh: "Kalameh", sans-serif;
+  --font-inter: "Inter", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,7 +111,10 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
