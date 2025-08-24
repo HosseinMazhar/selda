@@ -8,7 +8,7 @@ import SeldaIcon from "../icon/SeldaIcon";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const links = ["صفحه اصلی", "چالش ها و قوانین", "داشبورد", "سوالات متداول"];
+  const links = ["سوالات متداول", "داشبورد", "چالش ها و قوانین", "صفحه اصلی"];
 
   return (
     <>
