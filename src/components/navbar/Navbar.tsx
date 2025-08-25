@@ -12,7 +12,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="fixed h-[83px] left-0 w-full z-40 top-[36px] flex justify-between gap-[13px] lg:px-[39px] px-[12px]">
+      <nav className="absolute h-[83px] left-0 w-full z-40 top-[36px] flex justify-between gap-[13px] lg:px-[39px] px-[12px]">
         <div className="w-fit lg:w-[382px] h-full flex gap-[13px]">
           <ThemeToggle />
           <div className="w-[42px] h-[42px] lg:w-[83px] lg:h-[83px] rounded-2xl bg-[#D8D0DF]/55 flex justify-center items-center transition-colors hover:bg-[#D8D0DF]/75 cursor-pointer">
