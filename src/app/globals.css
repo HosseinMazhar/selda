@@ -79,15 +79,15 @@
   src: url("/fonts/Inter/Inter-Bold.woff") format("woff");
 }
 
-  .font-kalameh {
-    font-family: "Kalame", sans-serif;
-  }
-  .font-kalamehNum {
-    font-family: "KalameNum", sans-serif;
-  }
-  .font-inter {
-    font-family: "Inter", sans-serif;
-  }
+.font-kalameh {
+  font-family: "Kalame", sans-serif;
+}
+.font-kalamehNum {
+  font-family: "KalameNum", sans-serif;
+}
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
 
 :root {
   --background: #ffffff;
@@ -117,4 +117,115 @@ body {
 html,
 body {
   overflow-x: hidden;
+}
+
+@keyframes dotGrowIn {
+  0% {
+    transform: scale(0);
+    box-shadow: none;
+  }
+  40% {
+    transform: scale(0);
+    box-shadow: none;
+  }
+  55% {
+    transform: scale(1.2);
+    box-shadow: none;
+  }
+  58% {
+    transform: scale(0.9);
+    box-shadow: none;
+  }
+  61% {
+    transform: scale(1.1);
+    box-shadow: none;
+  }
+  64% {
+    transform: scale(1);
+    box-shadow: 0 0 30px 10px rgba(255, 215, 0, 0.8);
+  }
+  94% {
+    transform: scale(1);
+    box-shadow: 0 0 30px 10px rgba(255, 215, 0, 0.8);
+  }
+  100% {
+    transform: scale(0);
+    box-shadow: none;
+  }
+}
+
+.dot-anim {
+  animation: dotGrowIn 10s ease-in-out infinite;
+  will-change: transform, box-shadow;
+  transform-origin: center;
+}
+
+@keyframes widthXS {
+  0% {
+    width: 0px;
+  }
+  20% {
+    width: 0px;
+  }
+  30% {
+    width: 80px;
+  }
+  40% {
+    width: 80px;
+  }
+  50% {
+    width: 184px;
+  }
+  60% {
+    width: 184px;
+  }
+  70% {
+    width: 260px;
+  }
+  90% {
+    width: 260px;
+  }
+  100% {
+    width: 0px;
+  }
+}
+
+@keyframes widthLG {
+  0% {
+    width: 0px;
+  }
+  20% {
+    width: 0px;
+  }
+  30% {
+    width: 200px;
+  }
+  40% {
+    width: 200px;
+  }
+  50% {
+    width: 460px;
+  }
+  60% {
+    width: 460px;
+  }
+  70% {
+    width: 646px;
+  }
+  90% {
+    width: 646px;
+  }
+  100% {
+    width: 0px;
+  }
+}
+
+.animate-width {
+  animation: widthXS 10s ease forwards infinite;
+}
+
+@media (min-width: 1024px) {
+  .animate-width {
+    animation: widthLG 20s ease forwards infinite;
+  }
 }

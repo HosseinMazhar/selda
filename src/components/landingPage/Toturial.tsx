@@ -20,7 +20,7 @@ const TutorialSlides = () => {
       spaceBetween={0}
       slidesPerView={1}
       autoplay={{
-        delay: 50000000,
+        delay: 10000,
         disableOnInteraction: false,
       }}
       className="w-full h-[600px] lg:h-[800px]"
@@ -131,7 +131,7 @@ const TutorialSlides = () => {
                 </h3>
               </div>
             </div>
-            <div className="w-full flex h-full p-[16px] lg:p-[50px] flex-col justify-between items-center lg:flex-row lg:mt-[100px] mt-[32px]">
+            <div className="w-full flex h-full p-[32px] lg:p-[50px] lg:pt-[16px] flex-col justify-between items-center lg:flex-row lg:mt-[30px] mt-[16px]">
               <div className="w-full h-full flex flex-col justify-around items-center lg:flex-row bg-white rounded-2xl">
                 <Image
                   width={300}

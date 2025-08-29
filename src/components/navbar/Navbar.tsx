@@ -55,10 +55,7 @@ export default function Navbar() {
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="relative w-full h-full flex flex-col justify-start items-end py-[24px] px-[16px]">
-          <div className="w-full flex justify-center items-center mb-[40px]">   
-            <SeldaIcon />
-          </div>
+        <div className="relative w-full h-full flex flex-col-reverse justify-start items-end py-[24px] px-[16px]">
           {links.map((link) => (
             <span
               key={link}
@@ -67,7 +64,13 @@ export default function Navbar() {
               {link}
             </span>
           ))}
-          <CloseCircle className="absolute top-[10px] right-[10px] dark:text-white" onClick={() => setIsOpen(false)} />
+          <div className="w-full flex justify-center items-center mb-[40px]">
+            <SeldaIcon />
+          </div>
+          <CloseCircle
+            className="absolute top-[10px] right-[10px] dark:text-white"
+            onClick={() => setIsOpen(false)}
+          />
         </div>
       </div>
 
