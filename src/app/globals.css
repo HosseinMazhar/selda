@@ -158,9 +158,10 @@ body {
   animation: dotGrowIn 10s ease-in-out infinite;
   will-change: transform, box-shadow;
   transform-origin: center;
+  transform: scale(0);
 }
 
-@keyframes widthXS {
+@keyframes subtitleXS {
   0% {
     width: 0px;
   }
@@ -190,7 +191,7 @@ body {
   }
 }
 
-@keyframes widthLG {
+@keyframes subtitleLG {
   0% {
     width: 0px;
   }
@@ -220,12 +221,218 @@ body {
   }
 }
 
-.animate-width {
-  animation: widthXS 10s ease forwards infinite;
+.subtitle-anime {
+  animation: subtitleXS 10s ease forwards infinite;
+  width: 0px;
 }
 
 @media (min-width: 1024px) {
-  .animate-width {
-    animation: widthLG 20s ease forwards infinite;
+  .subtitle-anime {
+    animation: subtitleLG 10s ease forwards infinite;
+    width: 0px;
   }
 }
+
+@keyframes titleXS {
+  0% {
+    width: 0px;
+  }
+  10% {
+    width: 100px;
+  }
+  90% {
+    width: 100px;
+  }
+  100% {
+    width: 0px;
+  }
+}
+
+@keyframes titleLG {
+  0% {
+    width: 0px;
+  }
+  10% {
+    width: 254px;
+  }
+  90% {
+    width: 254px;
+  }
+  100% {
+    width: 0px;
+  }
+}
+
+.title-anime {
+  animation: titleXS 10s ease forwards infinite;
+  width: 0px;
+}
+
+@media (min-width: 1024px) {
+  .title-anime {
+    animation: titleLG 10s ease forwards infinite;
+    width: 0px;
+  }
+}
+
+.moving-gradient {
+  background: linear-gradient(
+    to right,
+    rgba(254, 178, 53, 0) 0%,
+    #feb235 50%,
+    rgba(254, 178, 53, 0) 100%
+  );
+  animation: moveGradient 3s linear infinite;
+}
+
+@keyframes moveGradient {
+  0% {
+    transform: translateX(-300px); /* start just outside left */
+  }
+  100% {
+    transform: translateX(100vw); /* move all the way past right */
+  }
+}
+
+.chart-line {
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+}
+
+.animate-draw {
+  animation: draw 10s linear forwards;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes chartDotGrowIn {
+  0% {
+    transform: scale(0);
+    box-shadow: none;
+  }
+  40% {
+    transform: scale(0);
+    box-shadow: none;
+  }
+  55% {
+    transform: scale(1.2);
+    box-shadow: none;
+  }
+  58% {
+    transform: scale(0.9);
+    box-shadow: none;
+  }
+  61% {
+    transform: scale(1.1);
+    box-shadow: none;
+  }
+  64% {
+    transform: scale(1);
+    box-shadow: 0 0 30px 10px rgba(255, 215, 0, 0.8);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 30px 10px rgba(255, 215, 0, 0.8);
+  }
+}
+
+.chart-dot-anim {
+  animation: chartDotGrowIn 2s forwards;
+  will-change: transform, box-shadow;
+  transform-origin: center;
+  transform: scale(0);
+}
+
+@media (min-width: 1024px) {
+  .chart-dot-anim {
+    animation-duration: 8s; /* override duration */
+  }
+}
+
+@keyframes chartBadgeGrowIn {
+  0% {
+    transform: scale(0);
+    box-shadow: none;
+  }
+  40% {
+    transform: scale(0);
+    box-shadow: none;
+  }
+  55% {
+    transform: scale(1.2);
+    box-shadow: none;
+  }
+  58% {
+    transform: scale(0.9);
+    box-shadow: none;
+  }
+  61% {
+    transform: scale(1.1);
+    box-shadow: none;
+  }
+  64% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.badge-anim {
+  animation: chartBadgeGrowIn 2s forwards;
+  will-change: transform, box-shadow;
+  transform-origin: center;
+  transform: scale(0);
+}
+
+@media (min-width: 1024px) {
+  .badge-anim {
+    animation-duration: 8s; /* override duration */
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-400px) translateY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(400px) translateY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.coin-enter-left {
+  animation: slideInLeft 1s ease-out forwards, float 3s ease-in-out infinite 1s;
+  opacity: 0
+}
+
+.coin-enter-right {
+  animation: slideInRight 1s ease-out forwards, float 3s ease-in-out infinite 1s;
+  opacity: 0
+}
+

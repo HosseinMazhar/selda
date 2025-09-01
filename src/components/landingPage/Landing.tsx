@@ -34,11 +34,17 @@ const Landing = () => {
       />
 
       <div className="absolute inset-0 h-screen flex flex-col justify-center items-center lg:items-end px-[20px] lg:px-[96px]">
-        <h1 className="lg:text-8xl text-4xl font-kalameh font-bold bg-gradient-to-tl from-[#FFD288] via-[#EBDCBB] to-[#D8E6EE] text-transparent bg-clip-text">
-          با سلدا
-        </h1>
         <div className="w-full flex justify-center lg:justify-end items-center">
-          <div className="relative w-[265px] lg:w-[100px] h-[100px] overflow-hidden animate-width xs:animate-width-sm">
+          <div className="relative w-[265px] lg:w-[100px] h-[50px] lg:h-[100px] overflow-hidden title-anime xs:title-anime-sm">
+            <div className="w-[100px] lg:w-[246px] h-[50px] lg:h-[100px] absolute right-0">
+              <h1 className="lg:text-8xl text-4xl font-kalameh font-bold bg-gradient-to-tl from-[#FFD288] via-[#EBDCBB] to-[#D8E6EE] text-transparent bg-clip-text">
+                با سلدا
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div className="w-full flex justify-center lg:justify-end items-center">
+          <div className="relative w-[265px] lg:w-[100px] h-[100px] overflow-hidden subtitle-anime xs:subtitle-anime-sm">
             <div className="w-[260px] lg:w-[650px] h-[100px] absolute right-0">
               <p className="lg:text-6xl h-[100px] flex justify-center items-center text-2xl font-kalameh font-bold text-white [text-shadow:_2px_2px_6px_rgba(0,0,0,0.6)] lg:[text-shadow:none]">
                 پتانسیل ترید خود را آزاد کنید
