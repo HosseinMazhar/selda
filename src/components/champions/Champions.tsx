@@ -123,7 +123,7 @@ export default function ChampionsCard() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col h-full justify-center items-center gap-[20px] xl:w-[calc(100%-900px)] w-full font-kalameh">
+        <div className="flex flex-col h-full justify-center items-center gap-[20px] xl:w-[calc(100%-750px)] w-full font-kalameh">
           <div className="w-full px-[22px] py-[19px] rounded-2xl flex justify-between items-center bg-gradient-to-b from-[#8D50BE]/10 to-[#90CAF9]/10 shadow-md">
             <p className="w-[60px] text-left">1204</p>
             <p>تعداد کل کاربرها</p>
