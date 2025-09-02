@@ -10,7 +10,7 @@ const UsersFeedback = () => {
       </div>
       <div dir="rtl" className="w-full lg:h-[256px] grid grid-cols-9 gap-[16px] lg:gap-[0px]">
         <div className="col-span-9 lg:col-span-3 w-full h-full flex justify-center items-center">
-          <div className="w-[calc(100%-24px)] h-[235px] rounded-3xl border border-black flex flex-col justify-start items-center relative">
+          <div className="w-[calc(100%-24px)] h-[235px] rounded-3xl border border-black flex flex-col justify-start items-start relative">
             <div className="w-full flex justify-between px-[32px] py-[18px] items-center border-b">
               <div className="flex items-center gap-[10px]">
                 <Messages1 />
@@ -42,7 +42,7 @@ const UsersFeedback = () => {
               key={index}
               className="col-span-9 lg:col-span-2 w-full h-full flex justify-center items-center font-kalameh"
             >
-              <div className="w-[calc(100%-24px)] lg:hover:w-full lg:hover:h-full h-[235px] bg-gradient-to-br from-[#8D50BE]/42 to-[#0077C2]/62 lg:hover:bg-gradient-to-br lg:hover:from-[#BF87EF] lg:hover:to-[#314B8D] rounded-3xl flex flex-col justify-start items-end p-[21px] transition-all duration-300">
+              <div className="w-[calc(100%-24px)] lg:hover:w-full lg:hover:h-full h-[235px] bg-gradient-to-br from-[#8D50BE]/42 to-[#0077C2]/62 lg:hover:bg-gradient-to-br lg:hover:from-[#BF87EF] lg:hover:to-[#314B8D] rounded-3xl flex flex-col justify-start items-start p-[21px] transition-all duration-300">
                 <div className="w-full flex gap-[16px] justify-start">
                   <Image
                     src={"/userFeedback/user.png"}
@@ -56,7 +56,7 @@ const UsersFeedback = () => {
                     <p className="text-xs ">02/04</p>
                   </div>
                 </div>
-                <p className=" pt-[25px]">
+                <p className=" pt-[25px] text-right">
                   واقعا از این سایت راضی ام. یادگیری در کنار لذت بردن، حتما
                   پیشنهاد میکنم. ممنون از تیم خوبتون
                 </p>

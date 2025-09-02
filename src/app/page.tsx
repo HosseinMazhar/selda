@@ -1,10 +1,9 @@
+import ChampionsCard from "@/components/champions/Champions";
 import Features from "@/components/features/Features";
 import Landing from "@/components/landingPage/Landing";
 import Toturial from "@/components/landingPage/Toturial";
 import UsersFeedback from "@/components/usersFeedback/UsersFeedback";
-import Line from "@/components/video/Line";
 import Video from "@/components/video/Video";
-import { AddSquare, Messages1 } from "iconsax-reactjs";
 import Image from "next/image";
 
 export default function Home() {
@@ -18,6 +17,7 @@ export default function Home() {
       <Features />
       <Video />
       <UsersFeedback />
+      <ChampionsCard />
     </main>
   );
 }
