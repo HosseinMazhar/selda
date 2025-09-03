@@ -656,3 +656,12 @@ body {
   cursor: grabbing;
   cursor: -webkit-grabbing;
 }
+
+.circle {
+  transform: scale(0);
+  transition: transform 0.8s ease-out;
+}
+
+.circle.show {
+  transform: scale(1);
+}

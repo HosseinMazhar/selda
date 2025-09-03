@@ -4,7 +4,9 @@ import Landing from "@/components/landingPage/Landing";
 import Toturial from "@/components/landingPage/Toturial";
 import UsersFeedback from "@/components/usersFeedback/UsersFeedback";
 import Video from "@/components/video/Video";
-import ChampionsList from "./ChampionsList";
+import ChampionsList from "../components/championsList/ChampionsList";
+import Line from "@/components/usersPath/Line";
+import LandingCircles from "@/components/usersPath/LoadingCircles";
 
 export default function Home() {
   return (
@@ -19,6 +21,11 @@ export default function Home() {
       <UsersFeedback />
       <ChampionsCard />
       <ChampionsList />
+      <div className="w-full relative bg-[#F0F2F3] flex justify-start items-start">
+        <div className="absolute w-full inset-0 z-10 items-end flex h-full justify-end -top-[400px] bg-[url('/video/line.png')] bg-contain bg-right bg-no-repeat"></div>
+        <div className="absolute w-full h-[300px] lg:h-[700px] inset-0 z-0 items-end bg-gradient-to-b from-[#F0F2F3] via-[#90CAF9]/30 to-[#FFFFFF]/6 -top-[50px] lg:-top-[250px]"></div>
+        <LandingCircles />
+      </div>
     </main>
   );
 }

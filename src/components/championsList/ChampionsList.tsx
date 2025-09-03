@@ -117,8 +117,8 @@ export default function ChampionsList() {
   }, []);
 
   return (
-    <div className="w-full flex justify-center items-center flex-col lg:px-[76px] px-[16px] bg-[#F0F2F3] pt-[75px]">
-      <div className="w-full flex justify-end items-end font-kalameh font-extrabold text-4xl gap-[16px] pb-[16px] lg:pb-[40px]">
+    <div className="relative w-full flex justify-center items-center flex-col lg:px-[76px] px-[16px] bg-[#F0F2F3] pt-[75px]">
+      <div className=" z-20 w-full flex justify-end items-end font-kalameh font-extrabold text-4xl gap-[16px] pb-[16px] lg:pb-[40px]">
         <InfoCircle
           size="35"
           color="#8D50BE"
@@ -132,7 +132,7 @@ export default function ChampionsList() {
       {/* OUTER: vertical scroller (scrollbar hidden) */}
       <div
         id="champions-v-scroll"
-        className="pt-[30px] w-full h-[285px] overflow-y-auto overflow-x-hidden hide-vert-scrollbar cursor-grab"
+        className="z-20 pt-[30px] w-full h-[285px] overflow-y-auto overflow-x-hidden hide-vert-scrollbar cursor-grab"
         dir="rtl"
       >
         {/* INNER: horizontal scroller (scrollbar visible) */}
