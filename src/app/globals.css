@@ -627,3 +627,32 @@ body {
 .backface-hidden {
   backface-visibility: hidden;
 }
+
+@keyframes autoScroll {
+  from {
+    scroll-top: 0;
+  }
+  to {
+    scroll-top: 9999px; /* scroll to bottom */
+  }
+}
+
+.scroll-animate {
+  animation: autoScroll 20s ease-in-out forwards;
+  animation-play-state: paused; /* animation starts only when triggered */
+}
+
+/* Hide only vertical scrollbar */
+.hide-vert-scrollbar {
+  -ms-overflow-style: none;      /* IE/Edge */
+  scrollbar-width: none;         /* Firefox (affects this element only) */
+}
+.hide-vert-scrollbar::-webkit-scrollbar {
+  display: none;                 /* Chrome/Safari on this element */
+}
+
+/* Drag cursor while dragging */
+#champions-v-scroll.dragging {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
