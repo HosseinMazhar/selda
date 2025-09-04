@@ -19,7 +19,7 @@ const TutorialSlides = () => {
   return (
     <div className="relative w-full">
       <div className="absolute top-0 left-0 w-screen h-[5px] bg-[#FEB235]/20 overflow-hidden z-50">
-        <div className="moving-gradient h-full w-[300px]"></div>
+        <div className="moving-gradient h-full w-[500px]"></div>
       </div>
 
       <Swiper

@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import SeldaIcon from "@/components/icon/SeldaIcon";
-import ThemeToggle from "@/components/navbar/ThemeToggle";
-import { Global, HamburgerMenu } from "iconsax-reactjs";
 import Navbar from "@/components/navbar/Navbar";
+import Footer from "@/components/footer/Footer";
 
 export const metadata: Metadata = {
   title: "سلدا",
@@ -20,6 +18,7 @@ export default function RootLayout({
       <body className="w-full">
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

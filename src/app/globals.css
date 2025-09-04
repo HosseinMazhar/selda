@@ -287,7 +287,7 @@ body {
 
 @keyframes moveGradient {
   0% {
-    transform: translateX(-300px); /* start just outside left */
+    transform: translateX(-600px); /* start just outside left */
   }
   100% {
     transform: translateX(100vw); /* move all the way past right */
@@ -664,4 +664,14 @@ body {
 
 .circle.show {
   transform: scale(1);
+}
+
+.news-moving-gradient {
+  background: linear-gradient(
+    to right,
+    rgba(127, 53, 254, 0.058) 0%,
+    rgba(127, 53, 254, 0.538) 50%,
+    rgba(127, 53, 254, 0.058) 100%
+  );
+  animation: moveGradient 3s linear infinite;
 }

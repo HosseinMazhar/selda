@@ -5,8 +5,8 @@ import Toturial from "@/components/landingPage/Toturial";
 import UsersFeedback from "@/components/usersFeedback/UsersFeedback";
 import Video from "@/components/video/Video";
 import ChampionsList from "../components/championsList/ChampionsList";
-import Line from "@/components/usersPath/Line";
 import LandingCircles from "@/components/usersPath/LoadingCircles";
+import News from "@/components/news/News";
 
 export default function Home() {
   return (
@@ -26,6 +26,10 @@ export default function Home() {
         <div className="absolute w-full h-[300px] lg:h-[700px] inset-0 z-0 items-end bg-gradient-to-b from-[#F0F2F3] via-[#90CAF9]/30 to-[#FFFFFF]/6 -top-[50px] lg:-top-[250px]"></div>
         <LandingCircles />
       </div>
+      <div className="relative w-screen h-[15px] bg-purple-700/20 overflow-hidden z-50">
+        <div className="news-moving-gradient h-full w-[500px]"></div>
+      </div>
+      <News />
     </main>
   );
 }
