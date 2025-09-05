@@ -23,7 +23,7 @@ const Line = () => {
               { strokeDashoffset: 0 }
             ],
             {
-              duration: 15000, // 15 seconds
+              duration: 7000, // 15 seconds
               fill: "forwards",
               easing: "linear",
             }

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="w-full grid grid-cols-2 lg:grid-cols-4 bg-[#333333] font-kalameh text-white py-[30px] gap-[16px] px-[16px] lg:px-[56px]">
+    <div className="w-full grid grid-cols-2 lg:grid-cols-4 bg-[#333333] font-kalameh text-white py-[30px] gap-[36px] px-[16px] lg:px-[56px]">
       <div className="col-span-1 w-full flex flex-col justify-start items-end lg:items-center">
         <div className="w-fit flex flex-col justify-start gap-[16px] items-end">
           <Link href={"/"} className="font-bold text-xl">

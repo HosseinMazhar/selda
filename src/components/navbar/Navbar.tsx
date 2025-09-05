@@ -15,11 +15,11 @@ export default function Navbar() {
       <nav className="absolute h-[83px] left-0 w-full z-40 top-[36px] flex justify-between gap-[13px] lg:px-[39px] px-[12px]">
         <div className="w-fit lg:w-[382px] h-full flex gap-[13px]">
           <ThemeToggle />
-          <div className="w-[42px] h-[42px] lg:w-[83px] lg:h-[83px] rounded-2xl bg-[#D8D0DF]/55 flex justify-center items-center transition-colors hover:bg-[#D8D0DF]/75 cursor-pointer">
+          <div className="w-[42px] h-[42px] lg:w-[83px] lg:h-[83px] rounded-2xl bg-[#D8D0DF]/55 dark:bg-neutral-800/55 flex justify-center items-center transition-colors hover:bg-[#D8D0DF]/75 cursor-pointer">
             <Global color="#0E4891" className="size-[22px] lg:size-[39px]" />
           </div>
-          <div className="w-fit h-fit lg:w-[190px] lg:h-[83px] rounded-2xl bg-[#D8D0DF]/55 flex justify-center items-center transition-colors hover:bg-[#D8D0DF]/75">
-            <span className="cursor-pointer px-[17px] py-[9px] rounded-2xl font-kalameh select-none">
+          <div className="w-fit h-fit lg:w-[190px] lg:h-[83px] rounded-2xl bg-[#D8D0DF]/55 dark:bg-neutral-800/55 flex justify-center items-center transition-colors hover:bg-[#D8D0DF]/75">
+            <span className="cursor-pointer px-[17px] py-[9px] rounded-2xl font-kalameh select-none dark:text-white">
               ورود و ثبت نام
             </span>
           </div>
@@ -28,7 +28,7 @@ export default function Navbar() {
         {/* Large screens links */}
         <div
           dir="rtl"
-          className="hidden lg:flex w-[calc(100%-382px)] h-full rounded-2xl bg-[#D8D0DF]/55 px-[6px] justify-start items-center xl:gap-[41px] lg:gap-[16px]"
+          className="hidden lg:flex w-[calc(100%-382px)] h-full rounded-2xl bg-[#D8D0DF]/55 dark:bg-neutral-800/55 px-[6px] justify-start items-center xl:gap-[41px] lg:gap-[16px]"
         >
           <div className="size-[73px] shrink-0">
             <SeldaIcon />
@@ -36,7 +36,7 @@ export default function Navbar() {
           {links.map((link) => (
             <span
               key={link}
-              className="text-right cursor-pointer px-[17px] py-[9px] rounded-2xl border-2 hover:border-white border-transparent transition font-kalameh"
+              className="text-right cursor-pointer px-[17px] py-[9px] rounded-2xl border-2 hover:border-white border-transparent transition font-kalameh dark:text-white"
             >
               {link}
             </span>

@@ -82,22 +82,22 @@ const Chart = ({ onAnimationEnd }: ChartProps) => {
                 <div
                   className={`px-[29px] py-[4px] border border-[#333333] dark:border-white rounded-2xl flex justify-center items-center cursor-pointer transition-colors font-bold dark:text-white text-black`}
                 >
-                  روز
+                  روزانه
                 </div>
                 <div
-                  className={`px-[29px] py-[4px] border border-[#333333] dark:border-white rounded-2xl flex justify-center items-center cursor-pointer transition-colors text-gray-500 dark:text-white`}
+                  className={`px-[29px] py-[4px] border border-[#333333] dark:border-white rounded-2xl flex justify-center items-center cursor-pointer transition-colors font-bold dark:text-white text-black`}
                 >
-                  ماه
+                  ماهانه
                 </div>
               </div>
               <div className="flex gap-[14px] font-kalameh flex-col lg:flex-row">
                 <div
-                  className={`px-[29px] py-[4px] text-white rounded-2xl flex justify-center items-center cursor-pointer transition-colors bg-[#4AC1FF]`}
+                  className={`px-[29px] py-[4px] text-white rounded-2xl flex justify-center items-center cursor-pointer transition-colors bg-[#0e86c7]`}
                 >
                   موجودی
                 </div>
                 <div
-                  className={`px-[29px] py-[4px] text-white rounded-2xl flex justify-center items-center cursor-pointer transition-colors bg-[#4AC1FF]/55`}
+                  className={`px-[29px] py-[4px] text-white rounded-2xl flex justify-center items-center cursor-pointer transition-colors bg-[#0e86c7]`}
                 >
                   تعداد معاملات
                 </div>
@@ -159,7 +159,7 @@ const Chart = ({ onAnimationEnd }: ChartProps) => {
                     animate ? "badge-anim" : ""
                   }`}
                 >
-                  11,600^
+                  11,600
                 </div>
                 <Image
                   src={"/tutorialCoins/1.png"}

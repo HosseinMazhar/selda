@@ -21,12 +21,12 @@ export default function Home() {
       <UsersFeedback />
       <ChampionsCard />
       <ChampionsList />
-      <div className="w-full relative bg-[#F0F2F3] dark:bg-neutral-800 flex justify-start items-start">
+      <div className="w-full relative bg-[#F0F2F3] dark:bg-neutral-800 flex justify-start items-start lg:pb-[150px]">
         <div className="absolute w-full inset-0 z-10 items-end flex h-full justify-end -top-[400px] bg-[url('/video/line.png')] bg-contain bg-right bg-no-repeat"></div>
-        <div className="absolute w-full h-[300px] lg:h-[700px] inset-0 z-0 items-end bg-gradient-to-b from-[#F0F2F3] dark:from-neutral-800 dark:from-bg-neutral-800 via-[#90CAF9]/30 to-[#FFFFFF]/6 dark:to-neutral-800 -top-[50px] lg:-top-[250px]"></div>
+        <div className="absolute w-full h-[300px] lg:h-[700px] inset-0 z-0 items-end bg-gradient-to-b from-[#F0F2F3] dark:from-neutral-800 dark:from-bg-neutral-800 via-[#E6B3FC]/30 to-[#FFFFFF]/6 dark:to-neutral-800 -top-[50px] lg:-top-[250px]"></div>
         <LandingCircles />
       </div>
-      <div className="relative w-screen h-[15px] bg-purple-700/20 dark:bg-neutral-800 overflow-hidden z-40">
+      <div className="relative w-screen h-[4px] bg-purple-700/20 dark:bg-neutral-800 overflow-hidden z-40">
         <div className="news-moving-gradient h-full w-[500px]"></div>
       </div>
       <News />

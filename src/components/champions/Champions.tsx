@@ -109,7 +109,7 @@ export default function ChampionsCard() {
           </div>
         </div>
         <div className="w-full flex flex-col gap-[16px] md:hidden">
-          <div className="w-full flex justify-center items-center gap-[16px]">
+          <div className="w-full flex justify-start items-center gap-[30px]">
             <Image
               src="/champions/1.png"
               width={149}
@@ -122,7 +122,7 @@ export default function ChampionsCard() {
               <p className="text-sm dark:text-white">Amirali Akbari</p>
             </div>
           </div>
-          <div className="w-full flex justify-center items-center gap-[16px]">
+          <div className="w-full flex justify-start items-center gap-[30px]">
             <Image
               src="/champions/2.png"
               width={149}
@@ -135,7 +135,7 @@ export default function ChampionsCard() {
               <p className="text-sm dark:text-white">Amirali Akbari</p>
             </div>
           </div>
-          <div className="w-full flex justify-center items-center gap-[16px]">
+          <div className="w-full flex justify-start items-center gap-[30px]">
             <Image
               src="/champions/3.png"
               width={149}

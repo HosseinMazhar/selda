@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const UsersFeedback = () => {
   return (
-    <div className="w-full flex flex-col justify-center items-center lg:px-[76px] px-[16px] pt-[250px] bg-[#F0F2F3] dark:bg-neutral-800 gap-[27px] font-kalameh">
+    <div className="w-full flex flex-col justify-center items-center lg:px-[76px] px-[16px] lg:pt-[250px] pt-[80px] bg-[#F0F2F3] dark:bg-neutral-800 gap-[27px] font-kalameh">
       <div className="w-full flex justify-between items-center px-[12px]">
         <p className="cursor-pointer text-[#333333] dark:text-neutral-200">نظرات بیشتر</p>
         <p className="font-bold text-xl dark:text-white">برخی از نظرات کاربران</p>

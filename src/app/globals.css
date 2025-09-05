@@ -142,11 +142,11 @@ body {
   }
   64% {
     transform: scale(1);
-    box-shadow: 0 0 30px 10px rgba(255, 215, 0, 0.8);
+    box-shadow: 0 0 30px 10px rgba(255, 55, 152, 0.8);
   }
   94% {
     transform: scale(1);
-    box-shadow: 0 0 30px 10px rgba(255, 215, 0, 0.8);
+    box-shadow: 0 0 30px 10px rgba(255, 55, 152, 0.8);
   }
   100% {
     transform: scale(0);
@@ -169,10 +169,10 @@ body {
     width: 0px;
   }
   30% {
-    width: 80px;
+    width: 184px;
   }
   40% {
-    width: 80px;
+    width: 184px;
   }
   50% {
     width: 184px;
@@ -180,7 +180,7 @@ body {
   60% {
     width: 184px;
   }
-  70% {
+  61% {
     width: 260px;
   }
   90% {
@@ -199,10 +199,10 @@ body {
     width: 0px;
   }
   30% {
-    width: 200px;
+    width: 460px;
   }
   40% {
-    width: 200px;
+    width: 460px;
   }
   50% {
     width: 460px;
@@ -210,7 +210,7 @@ body {
   60% {
     width: 460px;
   }
-  70% {
+  61% {
     width: 646px;
   }
   90% {
@@ -279,7 +279,7 @@ body {
   background: linear-gradient(
     to right,
     rgba(254, 178, 53, 0) 0%,
-    #feb235 50%,
+    #fee735 50%,
     rgba(254, 178, 53, 0) 100%
   );
   animation: moveGradient 3s linear infinite;
@@ -287,7 +287,7 @@ body {
 
 @keyframes moveGradient {
   0% {
-    transform: translateX(-600px); /* start just outside left */
+    transform: translateX(-900px); /* start just outside left */
   }
   100% {
     transform: translateX(100vw); /* move all the way past right */
