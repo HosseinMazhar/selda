@@ -67,9 +67,11 @@ const Chart = ({ onAnimationEnd }: ChartProps) => {
             <div className="flex gap-[14px] items-center">
               {animate ? (
                 <p className="text-2xl text-[#3EC175] font-bold">
-                  $<CountUp end={100000} duration={2500} />.
+                  $<CountUp end={11600} duration={2500} />.
                 </p>
-              ): <div className="w-[117px]"></div>}
+              ) : (
+                <div className="w-[117px]"></div>
+              )}
               <p dir="rtl" className="text-sm dark:text-white">
                 موجودی:
               </p>
@@ -157,7 +159,7 @@ const Chart = ({ onAnimationEnd }: ChartProps) => {
                     animate ? "badge-anim" : ""
                   }`}
                 >
-                  1.8^
+                  11,600^
                 </div>
                 <Image
                   src={"/tutorialCoins/1.png"}

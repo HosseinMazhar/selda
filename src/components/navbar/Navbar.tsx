@@ -8,7 +8,7 @@ import SeldaIcon from "../icon/SeldaIcon";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const links = ["سوالات متداول", "داشبورد", "چالش ها و قوانین", "صفحه اصلی"];
+  const links = ["صفحه اصلی", "سوالات متداول", "داشبورد", "چالش ها و قوانین"];
 
   return (
     <>
@@ -26,7 +26,13 @@ export default function Navbar() {
         </div>
 
         {/* Large screens links */}
-        <div className="hidden lg:flex w-[calc(100%-382px)] h-full rounded-2xl bg-[#D8D0DF]/55 px-[6px] justify-end items-center xl:gap-[41px] lg:gap-[16px]">
+        <div
+          dir="rtl"
+          className="hidden lg:flex w-[calc(100%-382px)] h-full rounded-2xl bg-[#D8D0DF]/55 px-[6px] justify-start items-center xl:gap-[41px] lg:gap-[16px]"
+        >
+          <div className="size-[73px] shrink-0">
+            <SeldaIcon />
+          </div>
           {links.map((link) => (
             <span
               key={link}
@@ -35,9 +41,6 @@ export default function Navbar() {
               {link}
             </span>
           ))}
-          <div className="size-[73px] shrink-0">
-            <SeldaIcon />
-          </div>
         </div>
 
         {/* Small screens hamburger */}
@@ -55,7 +58,14 @@ export default function Navbar() {
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="relative w-full h-full flex flex-col-reverse justify-start items-end py-[24px] px-[16px]">
+        <CloseCircle
+          className="absolute top-[10px] right-[10px] dark:text-white"
+          onClick={() => setIsOpen(false)}
+        />
+        <div className="w-full flex justify-center items-center mt-[40px]">
+          <SeldaIcon />
+        </div>
+        <div className="relative w-full h-full flex flex-col justify-start py-[24px] px-[16px]">
           {links.map((link) => (
             <span
               key={link}
@@ -64,13 +74,6 @@ export default function Navbar() {
               {link}
             </span>
           ))}
-          <div className="w-full flex justify-center items-center mb-[40px]">
-            <SeldaIcon />
-          </div>
-          <CloseCircle
-            className="absolute top-[10px] right-[10px] dark:text-white"
-            onClick={() => setIsOpen(false)}
-          />
         </div>
       </div>
 

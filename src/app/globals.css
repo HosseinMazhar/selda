@@ -155,7 +155,7 @@ body {
 }
 
 .dot-anim {
-  animation: dotGrowIn 10s ease-in-out infinite;
+  animation: dotGrowIn 6s ease-in-out infinite;
   will-change: transform, box-shadow;
   transform-origin: center;
   transform: scale(0);
@@ -222,13 +222,13 @@ body {
 }
 
 .subtitle-anime {
-  animation: subtitleXS 10s ease forwards infinite;
+  animation: subtitleXS 5s ease forwards infinite;
   width: 0px;
 }
 
 @media (min-width: 1024px) {
   .subtitle-anime {
-    animation: subtitleLG 10s ease forwards infinite;
+    animation: subtitleLG 5s ease forwards infinite;
     width: 0px;
   }
 }
@@ -264,13 +264,13 @@ body {
 }
 
 .title-anime {
-  animation: titleXS 10s ease forwards infinite;
+  animation: titleXS 5s ease forwards infinite;
   width: 0px;
 }
 
 @media (min-width: 1024px) {
   .title-anime {
-    animation: titleLG 10s ease forwards infinite;
+    animation: titleLG 5s ease forwards infinite;
     width: 0px;
   }
 }

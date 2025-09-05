@@ -3,36 +3,36 @@ import Image from "next/image";
 
 const UsersFeedback = () => {
   return (
-    <div className="w-full flex flex-col justify-center items-center lg:px-[76px] px-[16px] pt-[250px] bg-[#F0F2F3] gap-[27px] font-kalameh">
+    <div className="w-full flex flex-col justify-center items-center lg:px-[76px] px-[16px] pt-[250px] bg-[#F0F2F3] dark:bg-neutral-800 gap-[27px] font-kalameh">
       <div className="w-full flex justify-between items-center px-[12px]">
-        <p className="cursor-pointer text-[#333333]">نظرات بیشتر</p>
-        <p className="font-bold text-xl">برخی از نظرات کاربران</p>
+        <p className="cursor-pointer text-[#333333] dark:text-neutral-200">نظرات بیشتر</p>
+        <p className="font-bold text-xl dark:text-white">برخی از نظرات کاربران</p>
       </div>
       <div dir="rtl" className="w-full lg:h-[256px] grid grid-cols-9 gap-[16px] lg:gap-[0px]">
         <div className="col-span-9 lg:col-span-3 w-full h-full flex justify-center items-center">
-          <div className="w-[calc(100%-24px)] h-[235px] rounded-3xl border border-black flex flex-col justify-start items-start relative">
-            <div className="w-full flex justify-between px-[32px] py-[18px] items-center border-b">
+          <div className="w-[calc(100%-24px)] h-[235px] rounded-3xl border border-black dark:border-white flex flex-col justify-start items-start relative">
+            <div className="w-full flex justify-between px-[32px] py-[18px] items-center border-b dark:border-white">
               <div className="flex items-center gap-[10px]">
-                <Messages1 />
-                <p>نظرات من</p>
+                <Messages1 className="dark:text-white"/>
+                <p className="dark:text-white">نظرات من</p>
               </div>
-              <div className="flex items-center gap-[10px]">
+              <div className="flex items-center gap-[10px] dark:text-white">
                 <p>12/04/2025</p>
                 <p>14:02</p>
               </div>
             </div>
-            <p className="text-right p-[19px]">
+            <p className="text-right p-[19px] dark:text-white">
               با آموزش هایی که توی وبلاگ بود تونستم به سود دهی برسم. مرسی بابت
               راهنمایی پشتیبانی
             </p>
             <div className="absolute flex flex-row-reverse gap-[10px] bottom-0 left-0 p-[19px]">
-              <button className="w-[84px] h-[27px] rounded-md bg-[#0077C2]/23 flex justify-center items-center text-xs cursor-pointer">
+              <button className="w-[84px] h-[27px] rounded-md bg-[#0077C2]/23 dark:text-white flex justify-center items-center text-xs cursor-pointer">
                 حذف نظر
               </button>
-              <button className="w-[84px] h-[27px] rounded-md bg-[#8D50BE]/31 flex justify-center items-center text-xs cursor-pointer">
+              <button className="w-[84px] h-[27px] rounded-md dark:text-white bg-[#8D50BE]/31 flex justify-center items-center text-xs cursor-pointer">
                 ثبت
               </button>
-              <AddSquare />
+              <AddSquare className="dark:text-white" />
             </div>
           </div>
         </div>
@@ -52,11 +52,11 @@ const UsersFeedback = () => {
                     className="rounded-full shrink-0"
                   />
                   <div className="flex flex-col items-start justify-center">
-                    <p className="font-bold text-sm ">ستایش احمدی</p>
-                    <p className="text-xs ">02/04</p>
+                    <p className="font-bold text-sm dark:text-white">ستایش احمدی</p>
+                    <p className="text-xs dark:text-white ">02/04</p>
                   </div>
                 </div>
-                <p className=" pt-[25px] text-right">
+                <p className=" pt-[25px] text-right dark:text-white">
                   واقعا از این سایت راضی ام. یادگیری در کنار لذت بردن، حتما
                   پیشنهاد میکنم. ممنون از تیم خوبتون
                 </p>

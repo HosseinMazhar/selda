@@ -25,7 +25,7 @@ export default function LandingCircles() {
     <div ref={containerRef} className="w-full h-fit flex flex-col justify-start items-center z-20">
       <div className="mt-[20px] md:mt-[100px] lg:mt-[350px] h-fit relative pb-[100px] scale-[25%] md:scale-50 lg:scale-100">
         <div className="w-full flex justify-center items-center absolute -top-[300px]">
-          <h1 className="font-bold text-6xl lg:text-2xl text-black font-kalameh pt-[100px] z-20">
+          <h1 className="font-bold text-6xl lg:text-2xl text-black dark:text-white font-kalameh pt-[100px] z-20">
             مسیر کاربر
           </h1>
         </div>
@@ -40,7 +40,7 @@ export default function LandingCircles() {
         <div className={`size-[200px] bg-[#A781C6] rounded-full absolute left-[550px] top-[120px] circle flex justify-center items-center text-center text-white font-kalameh font-bold text-xl ${show ? "show" : ""}`} style={{transitionDelay: '9s'}}>ترید در اکانت</div>
         <div className={`size-[293px] bg-[#3598D6] rounded-full absolute left-[740px] -top-[130px] circle flex justify-center items-center text-center text-white font-kalameh font-bold text-xl ${show ? "show" : ""}`} style={{transitionDelay: '12s'}}>پاس کردن چالش ها</div>
         <div className={`size-[156px] bg-[#52BE80] rounded-full absolute left-[1000px] top-[160px] circle flex justify-center items-center text-center text-white font-kalameh font-bold text-xl ${show ? "show" : ""}`} style={{transitionDelay: '14s'}}>واریز سود به کاربر</div>
-        <p className="absolute font-bold font-kalameh bottom-[50px] -left-[20px] text-2xl ">شروع</p>
+        <p className="absolute font-bold font-kalameh bottom-[50px] -left-[20px] text-2xl dark:text-white">شروع</p>
       </div>
     </div>
   );

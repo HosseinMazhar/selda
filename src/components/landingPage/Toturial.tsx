@@ -18,10 +18,9 @@ const TutorialSlides = () => {
 
   return (
     <div className="relative w-full">
-      <div className="absolute top-0 left-0 w-screen h-[5px] bg-[#FEB235]/20 overflow-hidden z-50">
+      <div className="absolute top-0 left-0 w-screen h-[5px] bg-[#FEB235]/20 overflow-hidden z-40">
         <div className="moving-gradient h-full w-[500px]"></div>
       </div>
-
       <Swiper
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         modules={[Autoplay]}
@@ -38,6 +37,9 @@ const TutorialSlides = () => {
           <Diagnostics />
         </SwiperSlide>
       </Swiper>
+      <div className="absolute top-[50px] w-full h-fit flex justify-center items-center z-40 font-kalameh text-white">
+        <p>ژورنال معاملاتی و گزارش های شخصی سازی شده</p>
+      </div>
     </div>
   );
 };

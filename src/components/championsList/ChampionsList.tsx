@@ -117,7 +117,7 @@ export default function ChampionsList() {
   }, []);
 
   return (
-    <div className="relative w-full flex justify-center items-center flex-col lg:px-[76px] px-[16px] bg-[#F0F2F3] pt-[75px]">
+    <div className="relative w-full flex justify-center items-center flex-col lg:px-[76px] px-[16px] bg-[#F0F2F3] dark:bg-neutral-800 pt-[75px]">
       <div className=" z-20 w-full flex justify-end items-end font-kalameh font-extrabold text-4xl gap-[16px] pb-[16px] lg:pb-[40px]">
         <InfoCircle
           size="35"

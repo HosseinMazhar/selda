@@ -6,7 +6,7 @@ import Swiper from "./Swiper";
 
 const Features = () => {
   return (
-    <div className="w-full flex flex-col justify-start items-center bg-[#F0F2F3] bg-cover bg-no-repeat bg-bottom xl:gap-[116px] gap-[16px] pt-[100px]">
+    <div className="w-full flex flex-col justify-start items-center bg-[#F0F2F3] dark:bg-neutral-800 bg-cover bg-no-repeat bg-bottom xl:gap-[116px] gap-[16px] pt-[100px]">
       <div className="w-[80%] max-w-[1500px] flex flex-col justify-center items-center xl:flex-row lg:justify-around">
         <AnimatedDiv from="left">
           <Swiper />
@@ -76,7 +76,7 @@ const Features = () => {
         <AnimatedDiv from="right">
           <div
             dir="rtl"
-            className="border border-black rounded-xl p-8 font-kalameh w-[300px] lg:w-[350px] md:mt-[50px] xl:mt-[0px] h-[275px]"
+            className="border border-black dark:border-white rounded-xl p-8 font-kalameh w-[300px] lg:w-[350px] md:mt-[50px] xl:mt-[0px] h-[275px]"
           >
             <h3 className="mb-3 text-lg font-bold flex gap-[8px] text-[#8D50BE]">
               <span>چرا</span>
