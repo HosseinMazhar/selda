@@ -25,7 +25,7 @@ export default function TypingText({ text }: TypingTextProps) {
   }, [text]);
 
   return (
-    <p className="text-justify dark:text-white">
+    <p className="text-center dark:text-white">
       {displayedText}
     </p>
   );
